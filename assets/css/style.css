@@ -243,15 +243,15 @@
   height: 600px;
 }
 .slider .ss1 {
-  background: url(../img/swiper01.jpg) no-repeat center;
+  background: url(../img/main_slider01_2000.jpg) no-repeat center;
   background-size: cover;
 }
 .slider .ss2 {
-  background: url(../img/swiper01.jpg) no-repeat center;
+  background: url(../img/main_slider02_2000.jpg) no-repeat center;
   background-size: cover;
 }
 .slider .ss3 {
-  background: url(../img/swiper01.jpg) no-repeat center;
+  background: url(../img/main_slider03_2000.jpg) no-repeat center;
   background-size: cover;
 }
 
