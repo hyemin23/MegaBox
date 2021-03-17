@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/swiper.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="../ResponseWebStudy/html5/css/all.css" />
 
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico" />
@@ -56,6 +56,13 @@
     <![endif]-->
   </head>
   <body>
+    <!-- 스킵메뉴 -->
+    <div id="skip">
+      <a rel="bookmark" href="#movie"> 최신 영화 소식 </a>
+      <a rel="bookmark" href="#event"> 새로운 이벤트 </a>
+      <a rel="bookmark" href="#new"> 새로운 영화</a>
+    </div>
+    <!-- //스킵메뉴-->
     <header id="header">
       <div class="container">
         <div class="row">
@@ -864,7 +871,7 @@
           <div class="new">
             <h2>새로운 영화</h2>
             <div class="new_left">
-              <div class="play">
+              <div class="play" id="showTrailer" data-youtube="F1239ZePXfM">
                 <svg
                   version="1.1"
                   id="Layer_1"
@@ -1027,7 +1034,7 @@
                   </li>
                   <li>
                     <a href="#">영화관 공지</a>
-                    <ul style="">
+                    <ul>
                       <li>
                         <dl>
                           <dt><strong class="bar">안양</strong> <em>2019.05.28</em></dt>
@@ -2033,11 +2040,23 @@
     </footer>
     <!-- //footer -->
 
+    <!-- 트레일러 -->
+    <aside id="blackout" class="overlay">
+      <div id="trailerModal" class="modal">
+        <div id="trailer"></div>
+        <!-- YouTube 플레이어로 대체되는 부분 -->
+      </div>
+      <button id="hideTrailer" class="modal_close">닫기</button>
+    </aside>
+    <!-- //트레일러 -->
+
     <!-- 자바스크립트 라이브러리 -->
     <script src="../ResponseWebStudy/html5/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/modernize-custom.js"></script>
-    <script src="assets/js/ie-checker.js"></script>
+    <script src="assets/js/ie-check.js"></script>
     <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/iframe_api.js"></script>
+    <!-- <script src="assets/js/movie.js"></script> -->
     <script src="assets/js/index.js"></script>
   </body>
 </html>
