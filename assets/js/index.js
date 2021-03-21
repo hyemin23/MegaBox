@@ -3,7 +3,6 @@
 
 $(document).ready(function () {
 
-    alert("지예은 사랑해");
     //즉시실행함수 실행
     //트레일러 영상 플레이어
     /* YouTube iframe API: https://developers.google.com/youtube/player_parameters */
