@@ -807,7 +807,6 @@
   padding-bottom: 15px;
 }
 .service ul li:nth-child(1) {
-  border-right: 0;
   border-bottom: 0;
 }
 .service ul li:nth-child(2) {
@@ -1300,12 +1299,14 @@ body.modal_on {
     height: 13px !important;
   }
 
+  #movie .container {
+  }
   #movie .container:after {
     content: "";
     position: absolute;
+    z-index: 20;
     top: 0;
     right: 0;
-    z-index: 20;
     width: 8px;
     height: 100%;
     background: #d9d7e0;
@@ -1318,36 +1319,38 @@ body.modal_on {
     padding-right: 0;
   }
   #movie .row:after {
-    position: absolute;
     content: "";
-    width: 24px;
-    height: 100%;
+    position: absolute;
     top: 0;
     right: 0;
     z-index: 10;
-    background: #fff;
+    width: 24px;
+    height: 100%;
+    background-color: #fff;
   }
   #movie .ir_so {
     font-size: 18px;
     padding-bottom: 10px;
   }
-
+  .movie_title {
+    margin-bottom: 20px;
+  }
+  .movie_title ul {
+    padding-bottom: 8px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
   .movie_title li a {
     font-size: 14px;
     margin-right: 15px;
   }
-  .movie_title ul {
-    padding-bottom: 8px;
-  }
   .movie_title li.active a:before {
     bottom: -8px;
   }
-
   .movie_chart {
     position: relative;
     z-index: 30;
   }
-
   .movie_chart > div > div > div .infor {
     padding: 5px;
   }
@@ -1360,12 +1363,10 @@ body.modal_on {
     font-size: 19px;
     color: #222;
     font-weight: 300;
-    text-align: center;
   }
   .movie_chart > div > div > div .infor h3 span {
     display: none;
   }
-
   .movie_chart > div > div > div .infor .infor_btn a {
     width: 52%;
     margin-left: 24%;
@@ -1373,13 +1374,16 @@ body.modal_on {
     margin-right: 0;
     padding: 5px;
     color: #777;
+    margin-bottom: 5px;
     box-sizing: border-box;
+    font-size: 14px;
     background: none;
     border: 1px solid #ddd;
   }
   .movie_chart > div > div > div .infor .infor_btn a:last-child {
     display: none;
   }
+
   #event .row {
     padding: 0 8px;
   }
@@ -1449,7 +1453,144 @@ body.modal_on {
 }
 
 @media (max-width: 480px) {
+  .movie_chart > div > div > div .poster .rank {
+    top: 0px;
+  }
+  .movie_chart > div > div > div .poster .rank {
+    width: 18px;
+  }
+  .movie_chart > div > div > div .poster .mx {
+    top: 0;
+    right: 0;
+  }
+  .movie_chart > div > div > div .poster .mx span {
+    display: none;
+  }
+
+  .movie_title li a {
+    margin-right: 8px;
+  }
+
+  .notice {
+    padding: 5px;
+  }
+  .notice ul li ul {
+    left: 9px;
+    top: 56px;
+  }
+  .notice ul li ul li {
+    padding: 8px;
+  }
+  .notice ul li ul a {
+    padding: 5px 10px;
+  }
+  .help article > div {
+    height: 287px;
+  }
+
+  .card ul li {
+    padding: 8px;
+    margin-bottom: 8px;
+    min-height: 90px;
+  }
+  .card ul li span {
+    left: 11px;
+    top: 10px;
+  }
+  .card ul li span img {
+    width: 60px;
+  }
+  .card ul li strong {
+    padding-left: 75px;
+    font-size: 14px;
+  }
+  .card ul li em {
+    padding-left: 75px;
+  }
+
+  .service li a span {
+    width: 70px;
+    height: 70px;
+  }
+  .service li a strong {
+    font-size: 14px;
+  }
+  .service ul {
+    border: 1px solid #d7d7d7;
+    box-sizing: border-box;
+  }
+  .service li {
+    width: 50%;
+    border: 0;
+  }
+
+  .service li:nth-child(1) {
+    width: 49%;
+    border: 0;
+    border-right: 1px solid #d7d7d7;
+  }
+  .service li:nth-child(2) {
+    border: 0;
+    width: 51%;
+  }
+  .service li:nth-child(3) {
+    width: 49%;
+    border-top: 1px solid #d7d7d7;
+  }
+  .service li:nth-child(4) {
+    width: 51%;
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+  }
 }
 
 @media (max-width: 320px) {
+  .movie_title li a {
+    margin-right: 8px;
+  }
+
+  .notice {
+    padding: 5px;
+  }
+  .notice ul li ul {
+    left: 9px;
+    top: 56px;
+  }
+  .notice ul li ul li {
+    padding: 8px;
+  }
+  .notice ul li ul a {
+    padding: 5px 10px;
+  }
+  .help article > div {
+    height: 287px;
+  }
+
+  .card ul li {
+    padding: 8px;
+    margin-bottom: 8px;
+    min-height: 90px;
+  }
+  .card ul li span {
+    left: 11px;
+    top: 10px;
+  }
+  .card ul li span img {
+    width: 60px;
+  }
+  .card ul li strong {
+    padding-left: 75px;
+    font-size: 14px;
+  }
+  .card ul li em {
+    padding-left: 75px;
+  }
+
+  .service li a span {
+    width: 70px;
+    height: 70px;
+  }
+  .service li a strong {
+    font-size: 14px;
+  }
 }
