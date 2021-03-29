@@ -1,2 +1,3 @@
-# megabox2021
-megabox site
+# MegaBox
+### site url : https://hyemin23.github.io/MegaBox/
+
